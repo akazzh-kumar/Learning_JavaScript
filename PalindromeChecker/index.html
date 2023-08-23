@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>PalindromeChecker</title>
+	<link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+	<div id="wrapper">
+		<h2>Enter the Input for Palindrome </h2>
+		<div class="inputdiv">
+			<input type="text" id="input" placeholder="Enter the input">
+		</div>
+		<div>
+			<button type="submit" onclick="convert()">Result</button>
+		</div>
+		<div id="result">
+			
+		</div>
+	</div>
+	<script>
+		function convert(){
+			let str=document.getElementById("input").value;
+
+			let res='';
+			for(let i=str.length-1;i>=0;i--){
+				res=res+str[i];
+
+			}
+
+
+			if(str==res)
+				result.innerHTML = "Palindrome"
+			else 
+				result.innerHTML = "Not Palindrome"
+
+			
+
+		}
+	</script>
+
+</body>
+</html>
